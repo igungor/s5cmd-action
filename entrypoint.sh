@@ -16,7 +16,7 @@ if [ -z "$AWS_REGION" ]; then
   AWS_REGION="us-east-1"
 fi
 
-mkdir /root/.aws
+mkdir /root/.aws/
 cat < EOF > /root/.aws/credentials
 [s5cmd-action]
 aws_access_key_id     = ${AWS_ACCESS_KEY_ID}
