@@ -25,6 +25,6 @@ aws_session_token = ${AWS_SESSION_TOKEN}
 region = ${AWS_REGION}
 EOF
 
-sh -c "AWS_PROFILE=s5cmd-action /s5cmd $*"
+sh -c "cat /root/.aws/credentials && AWS_PROFILE=s5cmd-action /s5cmd $*"
 
 rm -f /root/.aws/credentials
