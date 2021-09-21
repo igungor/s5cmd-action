@@ -1,0 +1,9 @@
+name: "s5cmd"
+description: "Run s5cmd commands"
+author: igungor
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: zap
+  color: yellow
