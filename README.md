@@ -5,7 +5,7 @@ or any S3-compatible service, such as GCS.
 
 ## Usage
 
-```
+```yaml
 name: Upload docs to S3 with s5cmd
 
 on:
