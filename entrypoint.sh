@@ -24,6 +24,6 @@ aws_secret_access_key = ${AWS_SECRET_ACCESS_KEY}
 region = ${AWS_REGION}
 EOF
 
-sh -c "AWS_PROFILE=s5cmd-action s5cmd ${ENDPOINT} $*"
+AWS_PROFILE=s5cmd-action sh -c "AWS_PROFILE=s5cmd-action /s5cmd $*"
 
 rm -f /root/.aws/credentials
