@@ -1,4 +1,4 @@
-FROM peakcom/s5cmd:1.3.0
+FROM peakcom/s5cmd:v1.3.0
 
 LABEL "com.github.actions.name"="s5cmd"
 LABEL "com.github.actions.description"="Run s5cmd commands"
