@@ -21,9 +21,10 @@ cat << EOF > /root/.aws/credentials
 [s5cmd-action]
 aws_access_key_id     = ${AWS_ACCESS_KEY_ID}
 aws_secret_access_key = ${AWS_SECRET_ACCESS_KEY}
+aws_session_token = ${AWS_SESSION_TOKEN}
 region = ${AWS_REGION}
 EOF
 
-AWS_PROFILE=s5cmd-action sh -c "AWS_PROFILE=s5cmd-action /s5cmd $*"
+sh -c "AWS_PROFILE=s5cmd-action /s5cmd $*"
 
 rm -f /root/.aws/credentials
